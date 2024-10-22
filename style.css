@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  background-color: cadetblue;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+}
+input{
+  padding: 8px 60px;
+  border: none;
+  border-radius: 20px 0 0px 20px;
+  background-color: #ddd;
+}
+
+button{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0px;
+  cursor: pointer;
+  background-color: #ddddddb0
+;
+}
+
+button:hover{
+  background-color: #e0dbdb75;
+  transition: 0.6s;
+}
+
+.text-content{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+
+}
+
+.count{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.attempt , .win-lost{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+h2{
+  font-weight: 500;
+  color: #fff;
+}
+
+@media only screen and (max-width: 500px){
+  .container{
+    width: 250px;
+  }
+  input{
+    padding: 5px 8px;
+  }
+  button{
+    padding: 5px 8px;
+  }
+  .text-content{
+    font-size: 10px;
+  }
+}

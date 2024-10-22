@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h2>Guessing Game</h2>
+        <div class="form">
+          <form action="text">
+          <input type="text" required min="1" max="5">
+          </form>
+          <button type="submit">Submit</button>
+        </div>
+
+       <div class="text-content">
+        <div class="result">
+         
+        </div>
+
+        <div class="count">
+          <div class="attempt">
+            <p class="tried">Tried: 0,</p>
+            <p class="remains">Remains: 5</p>
+          </div>
+
+          <div class="win-lost">
+            <p class="wins">Win: 0,</p>
+            <p class="lost">Lost: 0</p>
+          </div>
+
+        </div>
+       </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
